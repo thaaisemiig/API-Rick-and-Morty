@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Animação icone */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.icone:hover {
+    animation: rotate 2s linear infinite;
+}
+
+h1 {
+    color: #115718;
+    margin: 0;
+    padding: 20px 0;
+    font-family: 'Lato';
+    font-weight: 900;
+    font-size: 50px;
+    animation: colorChange 5s infinite;
+}
+/* Animação h1 */
+@keyframes colorChange {
+    0% { color:  #115718; }
+    25% { color: #059212; }
+    50% { color: #06D001; }
+    75% { color: #9BEC00; }
+    100% { color: #F3FF90; }
+    100% { color: #ffffff; }
+}
+
+.card {
+    width: 250px;
+    height: auto;
+    border: 2px solid #28a745;
+}
+
+.form-control {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 15px;
+
+}
+
+main {
+    background-image: url(./img/fundo.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.card-body {
+    background-color: #252525;
+    color: white;
+    border-top: none;
+
+}
+
+.card-title {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.card-status {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.card-localizacao {
+    color: #848484;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.card-planeta {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.card-visto {
+    color: #848484;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.card-capitulo {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+}
+
+#cardsPersonagens{
+    transition: transform 0.3s ease;
+}
+
+/* Animação card */
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes zoomOut {
+    from {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.card:hover {
+    animation: zoomIn 0.3s forwards;
+}
+
+.card:not(:hover) {
+    animation: zoomOut 0.3s forwards;
+}
+
+#prev-btn,
+#next-btn {
+    background-color: #569D4E;
+    border: none;
+    font-family: "Lato", sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+#prev-btn,
+#next-btn:hover {
+    background-color: #06D001;
+}
+
+footer {
+    background-color: #151916;
+    color: #569D4E;
+    padding: 10px 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+}
